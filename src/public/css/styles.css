@@ -1,0 +1,196 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f7f9fc;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.circular-favicon {
+    width: 100px; /* Set the desired size */
+    height: 100px; /* Same as width to maintain circular shape */
+    border-radius: 50%; /* Makes the image circular */
+    border: 2px solid #333; /* Optional: Add a border for a clean look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    object-fit: cover; /* Ensures the image scales properly */
+}
+/* navbar style */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:white;
+    color: #fff;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    left: 0%
+  }
+
+  #logo{
+    background-color: transparent;
+  }
+
+  .navbar .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .navbar .logo span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+/* file upload container   */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.upload-container {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 75px ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.header p {
+    color: #718096;
+}
+
+.drop-zone {
+    border: 2px dashed #4299e1;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.drop-zone.drag-over {
+    background-color: #ebf8ff;
+    border-color: #2b6cb0;
+}
+
+.drop-zone-text {
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.file-input {
+    display: none;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.browse-button {
+    background-color: #4299e1;
+    color: white;
+}
+
+.browse-button:hover {
+    background-color: #2b6cb0;
+}
+
+.upload-button {
+    background-color: #48bb78;
+    color: white;
+}
+
+.upload-button:hover {
+    background-color: #2f855a;
+}
+
+.selected-file-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f7fafc;
+    border-radius: 6px;
+    display: none;
+}
+
+.file-info {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.file-info p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #2d3748;
+}
+
+.file-info p:last-child {
+    margin-bottom: 0;
+}
+
+.file-info strong {
+    color: #1a202c;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+.file-info a {
+    color: #4299e1;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.file-info a:hover {
+    text-decoration: underline;
+    color: #2b6cb0;
+}
+
+.success {
+    display: none;
+}
+
+.error {
+    display: none;
+    background-color: #fff5f5;
+    border: 1px solid #feb2b2;
+    color: #c53030;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+}

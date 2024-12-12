@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Sharing System</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" class="circular-favicon ">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+          <img src="./images/logo.png" alt="Logo" id="logo">
+          <span>Fileproplus</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="upload-container">
+            <div class="header">
+                <h1>File Sharing System</h1>
+                <p>Upload files (max 10MB) - Files will be automatically deleted after 24 hours</p>
+            </div>
+            
+            <form id="uploadForm">
+                <div class="drop-zone" id="dropZone">
+                    <div class="drop-zone-text">
+                        <p>Drag and drop files here</p>
+                        <p>or</p>
+                    </div>
+                    <input type="file" id="fileInput" class="file-input">
+                    <div class="button-container">
+                        <button type="button" id="browseButton" class="button browse-button">Browse Files</button>
+                        <button type="button" id="uploadButton" class="button upload-button">Upload File</button>
+                    </div>
+                </div>
+
+                <div id="selectedFileInfo" class="selected-file-info"></div>
+            </form>
+            
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="/js/fileUploader.js"></script>
+</body>
+</html>
